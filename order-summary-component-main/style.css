@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    --p-Pale-blue: hsl(225, 100%, 94%);
+    --p-Dark-blue: hsl(245, 75%, 52%);
+
+    --n-pale-blue: hsl(225, 100%, 98%);
+    --n-Desaturated-blue: hsl(224, 23%, 55%);
+    --n-Dark-blue: hsl(223, 47%, 23%);
+}
+
+html, body{
+    font-family:"Red Hat Display";
+    height: 100%;
+}
+
+body{
+    background-color: var(--p-Pale-blue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-indx: -2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.summarycontainer{
+    width: 450px;
+    background-color:#fff;
+    border-radius: 1rem;
+    text-align: center;
+    color: var(--n-Dark-blue);
+    margin-bottom: 1rem;
+}
+
+.summarytitle{
+    padding: 2rem 0 1rem 0;
+    font-weight: 900;
+}
+
+.summaryDescription{
+color: var(--n-Desaturated-blue);
+padding-bottom: 1rem;
+font-size: 20px;
+font-weight: 500;
+}
+
+.hero{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.PlanContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--n-pale-blue);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+    margin-right:2rem;
+    margin-bottom: 2rem;
+    /* margin: 0 1rem; */
+    
+}
+
+.plantitle{
+    font-weight: 900;
+}
+.PlanPrice{
+    font-weight: 600;
+    color: var(--n-Desaturated-blue);
+}
+.plan{
+    display: flex; 
+    border-radius: 8px;
+}
+
+.planinfo{
+    padding-left: 1rem;
+    text-align: center;
+}
+
+.btn{
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.changebtn{
+    color: var(--p-Dark-blue);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin: 15px auto;
+    font-weight: 900;
+}
+.proceedbtn{
+    background-color: var(--p-Dark-blue);
+    color: #fff;
+    font-size: 700;
+    font-size: 1.3rem;
+}
+
+.cancelbtn{
+    margin-bottom: 1rem;
+    color: var(--n-Desaturated-blue);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+@media (min-width:768px) {
+    bg__image{ 
+        background: url("./images/pattern-background-desktop.svg")no-repeat
+        center/cover;
+        height:50vh;
+    }
+
+    .container{
+        width:400px;
+    }
+
+    
+}
+
+
+
+
+/* copy right */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
